@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FlexNumberPicker">
+        <attr name="autoCollapse" format="boolean|reference"></attr>
+        <attr name="minValue" format="integer"></attr>
+        <attr name="reactLoseFocus" format="boolean"></attr>
+        <attr name="maxLength" format="integer"></attr>
+        <attr name="expect_layout_with" format="dimension|reference"></attr>
+        <attr name="expect_layout_height" format="dimension|reference"></attr>
+    </declare-styleable>
+</resources>

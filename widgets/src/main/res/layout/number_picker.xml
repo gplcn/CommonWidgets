@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/npLeftArea"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.common.widgets.SquareView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/square_bg_left">
+
+                <ImageView
+                    android:id="@+id/btnNpMinus"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/np_minus_selector" />
+
+
+            </com.common.widgets.SquareView>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+
+                <EditText
+                    android:id="@+id/npEditText"
+                    android:hint="0"
+                    android:focusable="false"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:textColor="#333"
+                    android:inputType="numberDecimal"
+                    android:imeOptions="actionDone"
+                    android:textSize="13sp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_gravity="top"
+                    android:background="#888888"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_gravity="bottom"
+                    android:background="#888888"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <com.common.widgets.SquareView
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/btnNpPlus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/np_plus_selector"
+            android:background="@drawable/square_bg_right"/>
+
+    </com.common.widgets.SquareView>
+
+</LinearLayout>

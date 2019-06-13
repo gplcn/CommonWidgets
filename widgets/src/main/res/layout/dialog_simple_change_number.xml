@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:Android="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_share_dialog"
+    android:orientation="vertical">
+
+    <!--标题-->
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="260dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="修改数量"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        tools:text="修改数量" />
+
+
+    <!--中部编辑框-->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/round_corner_bg_normal_gray"
+        android:minHeight="40dp">
+
+        <EditText
+            android:id="@+id/et_input_text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:gravity="center"
+            android:hint="0"
+            android:textColor="@color/common_title"
+            android:imeOptions="actionDone"
+            android:inputType="numberDecimal"
+            android:maxLength="9"
+            android:singleLine="true"
+            android:textSize="13sp"
+            />
+    </FrameLayout>
+
+
+
+
+    <View
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider_line"/>
+    <!--底部按钮-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/tv_left_button"
+            style="@style/dialog_bottom_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="@string/quxiao"
+            android:textColor="@color/common_content" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/divider_line"/>
+
+        <Button
+            android:id="@+id/tv_right_button"
+            style="@style/dialog_bottom_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="@string/queding"
+            android:textColor="@color/main_red" />
+
+    </LinearLayout>
+
+</LinearLayout>
